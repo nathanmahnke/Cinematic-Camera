@@ -14,17 +14,7 @@
       }
     ],
     "scripts": [
-      "scripts/cameraController.js"
-    ],
-    "languages": [
-      {
-        "lang": "en",
-        "name": "English",
-        "path": "languages/en.json"
-      }
-    ],
-    "styles": [
-      "styles/cinematicCamera.css"
+      "scripts/cinematicCamera.js"
     ],
     "compatibility": {
       "minimum": "10",

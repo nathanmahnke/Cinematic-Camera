@@ -1,9 +1,18 @@
-Hooks.on('ready', () => {
-  // Register the hotkey event
-  Hooks.on('hotKey', (event, key, isDown) => {
-    if (isDown && key === 'KeyZ') {
+Hooks.on('init', () => {
+  console.log("Hello");
+  game.keybindings.register("cinematicCamera", "Test", {
+    name: "Center TV view on players",
+    hint: "Resizes the view of the player \"TV\" to insure all players are on screen",
+    editable: [
+      {
+        key: "KeyZ"
+      }
+    ],
+    onDown: () => {
       zoomToFitAllVisiblePlayers();
-    }
+      console.log("Z has been pressed");
+      return true;
+    },
   });
 
   // Register the combat turn event
