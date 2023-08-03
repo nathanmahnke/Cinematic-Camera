@@ -1,42 +1,35 @@
 {
-  "id": "module",
-  "title": "New Module",
-  "description": "",
-  "version": "#{VERSION}#",
-  "library": "false",
-  "manifestPlusVersion": "1.2.0",
-  "compatibility": {
-    "minimum": 10,
-    "verified": 10,
-    "maximum": 11
-  },
-  "authors": [
-    {
-      "name": "The League of Extraordinary FVTT Developers",
-      "url": "https://github.com/League-of-Foundry-Developers",
-      "discord": "discordID#0001"
+    "id": "cinematicCamera",
+    "title": "Cinematic Camera",
+    "description": "Adds functionality for a \"TV\" player to follow player's movement and adds a hotkey to recenter the \"TV\" player to insure all players are in frame",
+    "version": "0.1",
+    "authors": [
+      {
+        "name": "Nathan Mahnke",
+        "discord": "nvmthedm",
+        "flags": {
+          "github": "nathanmahnke",
+          "ko-fi": "nvmthedm"
+        }
+      }
+    ],
+    "scripts": [
+      "scripts/cameraController.js"
+    ],
+    "languages": [
+      {
+        "lang": "en",
+        "name": "English",
+        "path": "languages/en.json"
+      }
+    ],
+    "styles": [
+      "styles/cinematicCamera.css"
+    ],
+    "compatibility": {
+      "minimum": "10",
+      "verified": "10"
     }
-  ],
-  "relationships": {
-    "systems": [],
-    "requires": []
-  },
-  "esmodules": [
-    "scripts/module.js"
-  ],
-  "scripts": [
-    "scripts/lib/lib.js"
-  ],
-  "styles": [
-    "styles/module.css"
-  ],
-  "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "languages/en.json"
-    }
-  ],
   "url": "#{URL}#",
   "manifest": "#{MANIFEST}#",
   "download": "#{DOWNLOAD}#",
